@@ -24,8 +24,22 @@ class AlarmCard extends StatelessWidget {
               style: TextStyle(fontSize: 40),
             ),
           ),
-          Row(),
-          Row(),
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0, left: 20),
+            child: Row(
+              children: const [
+                Text('Mon, Tue, Wed, Thurs, Fri, Sat'),
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              Container(
+                decoration: ,
+                child: const Text('M.'),
+              ),
+            ],
+          ),
           Row(),
           Row(),
           const Text(''),
