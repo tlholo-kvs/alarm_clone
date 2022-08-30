@@ -14,7 +14,25 @@ class TimerPage extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Column(),
+      body: Column(
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(top: 80, right: 40, left: 40),
+            child: CircleAvatar(
+              radius: 160,
+              child: Text(
+                '5:00',
+                style: TextStyle(fontSize: 40),
+              ),
+            ),
+          ),
+          Row(
+            children: const [
+              CircleAvatar(),
+            ],
+          ),
+        ],
+      ),
       bottomNavigationBar: const MyBottomNavigation(),
     );
   }

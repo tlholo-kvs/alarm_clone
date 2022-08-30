@@ -1,3 +1,4 @@
+import 'package:alarm_clone/widgets/my_add_widget.dart';
 import 'package:flutter/material.dart';
 import '../widgets/alarm_card.dart';
 import '../widgets/bottom_nav.dart';
@@ -37,9 +38,8 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.only(right: 140),
         child: GestureDetector(
           onTap: () {},
-          child: const CircleAvatar(
-            radius: 50,
-            child: Icon(Icons.add),
+          child: const MyAddWidget(
+            myRadius: 50,
           ),
         ),
       ),
